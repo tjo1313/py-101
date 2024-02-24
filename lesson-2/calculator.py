@@ -20,7 +20,7 @@ def messages(message, lang='en'):
 with open('calculator_messages.json', 'r') as file:
     MESSAGES = json.load(file)  # contains loaded messages as a Python dict
 
-print(messages['welcome'])
+print(messages('welcome'))
 
 while True:
 
@@ -28,14 +28,14 @@ while True:
     number1 = input()
 
     while invalid_number(number1):
-        print(messages['invalid_number'])
+        print(messages('invalid_number'))
         number1 = input()
 
     prompt("What's the second number?")
     number2 = input()
 
     while invalid_number(number2):
-        print(messages['invalid_number'])
+        print(messages('invalid_number'))
         number2 = input()
 
     prompt("What operation would you like to perform?\n")
