@@ -1,3 +1,9 @@
+import json
+
+# Load messages from JSON file
+with open('calculator_messages.json', 'r') as file:
+    MESSAGES = json.load(file)  # contains loaded messages as a Python dict
+
 def prompt(message):
     print(f"==> {message}")
 
@@ -11,20 +17,20 @@ def invalid_number(number_str):
 
 while True:
 
-    prompt('Welcome to Calculator!\n')
+    print(MESSAGES['welcome'])
 
     prompt("What's the first number?")
     number1 = input()
 
     while invalid_number(number1):
-        prompt("Hmm... that doesn't look like a valid number.")
+        print(MESSAGES['invalid_number'])
         number1 = input()
 
     prompt("What's the second number?")
     number2 = input()
 
     while invalid_number(number2):
-        prompt("Hmm... that doesn't look like a valid number.")
+        print(MESSAGES['invalid_number'])
         number2 = input()
 
     prompt("What operation would you like to perform?\n")
