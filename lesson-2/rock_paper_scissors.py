@@ -1,5 +1,5 @@
 '''This game is a variation on rock, paper, scissors that adds two more options
-Lizard and Spock. Updated rules include:
+Lizard and Spock (based on Big Bang Theory episode). Updated rules include:
 
 - rock crushes lizard
 - lizard poisons Spock
