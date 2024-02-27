@@ -6,18 +6,18 @@ def prompt(message):
     print(f"==> {message}")
 
 def display_winner (player, computer):
-      prompt(f'You chose {player} and the computer chose {computer}.')
-      
-      if ((player == 'rock' and computer == 'scissors') or
+    prompt(f'You chose {player} and the computer chose {computer}.')
+    
+    if ((player == 'rock' and computer == 'scissors') or
           (player == 'paper' and computer == 'rock') or
           (player == 'scissors' and computer == 'paper')):
-          prompt("You win!")
-      elif ((player == 'rock' and computer == 'paper') or
+        prompt("You win!")
+    elif ((player == 'rock' and computer == 'paper') or
           (player == 'paper' and computer == 'scissors') or
           (player == 'scissors' and computer == 'rock')):
-          prompt("Sorry, the computer wins!")
-      else:
-          prompt("It's a tie!")
+        prompt("Sorry, the computer wins!")
+    else:
+        prompt("It's a tie!")
 
 while True:
 
