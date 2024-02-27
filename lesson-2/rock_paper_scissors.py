@@ -1,3 +1,14 @@
+'''This game is a variation on rock, paper, scissors that adds two more options
+Lizard and Spock. Updated rules include:
+
+- rock crushes lizard
+- lizard poisons Spock
+- Spock smashes scissors
+- scissors decpaitates lizard
+- lizard eats paper
+- paper disporves Spock
+- Spock vaporizes rock '''
+
 import random
 
 VALID_CHOICES = ['rock', 'paper', 'scissors']
@@ -7,7 +18,7 @@ def prompt(message):
 
 def display_winner (player, computer):
     prompt(f'You chose {player} and the computer chose {computer}.')
-    
+
     if ((player == 'rock' and computer == 'scissors') or
           (player == 'paper' and computer == 'rock') or
           (player == 'scissors' and computer == 'paper')):
