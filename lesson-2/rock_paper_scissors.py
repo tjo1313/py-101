@@ -16,9 +16,6 @@ while True:
 
     computer_choice = random.choice(VALID_CHOICES)
     
-    print(choice)
-    print(computer_choice)
-    
     d.display_winner (choice, computer_choice)
 
     d.prompt("Do you want to play again (y/n)?")

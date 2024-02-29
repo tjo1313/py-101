@@ -40,15 +40,15 @@ the entire word! (Use 's' for scissors and 'sp' for spock since they both \
 start with 's'.")
         choice = input().lower()
         if choice in VALID_CHOICES or SHORTENED_CHOICES:
-            if choice == 'r' or 'rock':
+            if choice == 'r' or choice == 'rock':
                 return 'rock'
-            elif choice == 'p' or 'paper':
+            elif choice == 'p' or choice == 'paper':
                 return 'paper'
-            elif choice == 's' or 'scissors':
+            elif choice == 's' or choice == 'scissors':
                 return 'scissors'
-            elif choice == 'l' or 'lizard':
+            elif choice == 'l' or choice == 'lizard':
                 return 'lizard'
-            else :
+            else:
                 return 'spock'
         else:
             prompt(f"Sorry, '{choice}' is not a valid choice. Try again.")
