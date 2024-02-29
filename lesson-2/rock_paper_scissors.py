@@ -6,17 +6,19 @@ import display as d
 
 VALID_CHOICES = ['rock', 'paper', 'scissors', 'lizard', 'spock']
 
+print("-----------------------------------------------------------")
+print("    WELCOME TO ROCK, PAPER, SCISSORS--EXTREME EDITION!")
+print("-----------------------------------------------------------")
+
 while True:
 
-    d.prompt(f'Choose one: {", ".join(VALID_CHOICES)}')
-    choice =input().lower()
-
-    while choice not in VALID_CHOICES:
-        d.prompt(" That's not a valid choice. Please try again.")
-        choice = input().lower()
+    choice = d.get_user_choice()
 
     computer_choice = random.choice(VALID_CHOICES)
-
+    
+    print(choice)
+    print(computer_choice)
+    
     d.display_winner (choice, computer_choice)
 
     d.prompt("Do you want to play again (y/n)?")

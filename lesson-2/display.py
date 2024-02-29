@@ -1,3 +1,6 @@
+VALID_CHOICES = ['rock', 'paper', 'scissors', 'lizard', 'spock',]
+SHORTENED_CHOICES = ['r', 'p', 's', 'l', 'sp']
+
 def prompt(message):
     print(f"==> {message}")
 
@@ -28,3 +31,26 @@ def display_winner (player, computer):
         prompt("Sorry, the computer wins!")
     else:
         prompt("It's a tie!")
+
+def get_user_choice ():
+    while True:
+        prompt(f'Choose one: {", ".join(VALID_CHOICES)}')
+        prompt("You can also enter 'r' for rock if you don't want to type out \
+the entire word! (Use 's' for scissors and 'sp' for spock since they both \
+start with 's'.")
+        choice = input().lower()
+        if choice in VALID_CHOICES or SHORTENED_CHOICES:
+            if choice == 'r' or 'rock':
+                return 'rock'
+            elif choice == 'p' or 'paper':
+                return 'paper'
+            elif choice == 's' or 'scissors':
+                return 'scissors'
+            elif choice == 'l' or 'lizard':
+                return 'lizard'
+            else :
+                return 'spock'
+        else:
+            prompt(f"Sorry, '{choice}' is not a valid choice. Try again.")
+        
+
