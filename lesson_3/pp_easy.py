@@ -30,8 +30,68 @@
 # Question 5
 # Starting with the string:
 
-munsters_description = "The Munsters are creepy and spooky."
+# munsters_description = "The Munsters are creepy and spooky."
 # Return a new string that swaps the case of all of the letters:
 
-answer = munsters_description.swapcase()
+# answer = munsters_description.swapcase()
+# print(answer)
+
+# Question 6
+# Determine whether the name Dino appears in the strings below -- check each string separately:
+
+# str1 = "Few things in life are as important as house training your pet dinosaur."
+# str2 = "Fred and Wilma have a pet dinosaur named Dino."
+
+# print('Dino' in str1)
+# print('Dino' in str2)
+
+# Question 7
+# How can we add the family pet, "Dino", to the following list?
+
+# flintstones = ["Fred", "Barney", "Wilma", "Betty", "Bambam", "Pebbles"]
+
+# flintstones.append("Dino")
+# print(flintstones)
+
+# Question 8
+# In the previous problem, our first answer added 'Dino' to the list like this:
+
+# flintstones = ["Fred", "Barney", "Wilma", "Betty", "Bambam", "Pebbles"]
+# flintstones.append("Dino")
+
+# How can we add multiple items to our list (e.g., 'Dino' and 'Hoppy')? 
+# Replace the call to append with another method invocation.
+
+# flintstones.extend(["Dino", "Hoppy"])
+# print(flintstones)
+
+# Question 9
+# Return a new version of this sentence that ends just before the word house. 
+# Don't worry about spaces or punctuation: remove everything starting from 
+# the beginning of house to the end of the sentence.
+
+# advice = "Few things in life are as important as house training your pet dinosaur."
+# Expected return value:
+# => 'Few things in life are as important as '
+
+# answer = advice[:38]
+# print(answer)
+
+# answer = advice.split("house")[0] ==> returns list based on sep then indexes
+# print(answer)
+
+# Question 10
+# Replace the word "important" with "urgent" in this string:
+
+advice = "Few things in life are as important as house training your pet dinosaur."
+
+answer = advice.replace("important", "urgent")
 print(answer)
+
+
+
+
+
+
+
+
