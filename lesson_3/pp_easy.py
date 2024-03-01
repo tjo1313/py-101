@@ -83,10 +83,10 @@
 # Question 10
 # Replace the word "important" with "urgent" in this string:
 
-advice = "Few things in life are as important as house training your pet dinosaur."
+# advice = "Few things in life are as important as house training your pet dinosaur."
 
-answer = advice.replace("important", "urgent")
-print(answer)
+# answer = advice.replace("important", "urgent")
+# print(answer)
 
 
 
