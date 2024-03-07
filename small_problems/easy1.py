@@ -85,4 +85,17 @@
 #         product *= x
 #     print(f"\nThe product of the integers between 1 and {number} is {product:,}.")
 
+# 7. Write a function that takes two strings as arguments, determines the length 
+# of the two strings, and then returns the result of concatenating the shorter 
+# string, the longer string, and the shorter string once again. You may assume 
+# that the strings are of different lengths.
 
+# def combine_strings(str1, str2):
+#     if len(str1) < len(str2):
+#         return str1 + str2 + str1
+#     else:
+#         return str2 + str1 + str2
+    
+
+# print(combine_strings("soccer", "movie") == "moviesoccermovie")
+# print(combine_strings("movie", "soccer") == "moviesoccermovie")
